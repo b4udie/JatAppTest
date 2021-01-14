@@ -11,13 +11,23 @@
 		CBA1656625B0CB66007AA668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1656525B0CB66007AA668 /* AppDelegate.swift */; };
 		CBA1656825B0CB66007AA668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1656725B0CB66007AA668 /* SceneDelegate.swift */; };
 		CBA1656A25B0CB66007AA668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1656925B0CB66007AA668 /* ViewController.swift */; };
-		CBA1656D25B0CB66007AA668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA1656B25B0CB66007AA668 /* Main.storyboard */; };
 		CBA1656F25B0CB67007AA668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA1656E25B0CB67007AA668 /* Assets.xcassets */; };
 		CBA1657225B0CB67007AA668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA1657025B0CB67007AA668 /* LaunchScreen.storyboard */; };
 		CBA1658125B0CE62007AA668 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1658025B0CE62007AA668 /* AppStoryboard.swift */; };
 		CBA1658625B0CEEF007AA668 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1658525B0CEEF007AA668 /* ReuseIdentifying.swift */; };
 		CBA1658C25B0CF42007AA668 /* UITableView+ReusableSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1658B25B0CF42007AA668 /* UITableView+ReusableSupport.swift */; };
 		CBA1659625B0CFD9007AA668 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA1659525B0CFD9007AA668 /* Login.storyboard */; };
+		CBA1659925B0D10E007AA668 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1659825B0D10E007AA668 /* LoginConfigurator.swift */; };
+		CBA1659C25B0D116007AA668 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1659B25B0D116007AA668 /* LoginViewController.swift */; };
+		CBA1659F25B0D11C007AA668 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1659E25B0D11C007AA668 /* LoginPresenter.swift */; };
+		CBA165A225B0D121007AA668 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165A125B0D121007AA668 /* LoginRouter.swift */; };
+		CBA165A725B0D1F5007AA668 /* LifecyclePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165A625B0D1F5007AA668 /* LifecyclePresenterProtocol.swift */; };
+		CBA165AB25B0D298007AA668 /* CommonRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165AA25B0D298007AA668 /* CommonRouterProtocol.swift */; };
+		CBA165B125B0D38A007AA668 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA165B025B0D38A007AA668 /* SignUp.storyboard */; };
+		CBA165B425B0D50F007AA668 /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165B325B0D50F007AA668 /* SignUpConfigurator.swift */; };
+		CBA165B725B0D517007AA668 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165B625B0D517007AA668 /* SignUpViewController.swift */; };
+		CBA165BA25B0D51D007AA668 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165B925B0D51D007AA668 /* SignUpPresenter.swift */; };
+		CBA165BD25B0D524007AA668 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA165BC25B0D524007AA668 /* SignUpRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +38,6 @@
 		CBA1656525B0CB66007AA668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBA1656725B0CB66007AA668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBA1656925B0CB66007AA668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBA1656C25B0CB66007AA668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBA1656E25B0CB67007AA668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBA1657125B0CB67007AA668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBA1657325B0CB67007AA668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +45,17 @@
 		CBA1658525B0CEEF007AA668 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		CBA1658B25B0CF42007AA668 /* UITableView+ReusableSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableSupport.swift"; sourceTree = "<group>"; };
 		CBA1659525B0CFD9007AA668 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CBA1659825B0D10E007AA668 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		CBA1659B25B0D116007AA668 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CBA1659E25B0D11C007AA668 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CBA165A125B0D121007AA668 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		CBA165A625B0D1F5007AA668 /* LifecyclePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecyclePresenterProtocol.swift; sourceTree = "<group>"; };
+		CBA165AA25B0D298007AA668 /* CommonRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonRouterProtocol.swift; sourceTree = "<group>"; };
+		CBA165B025B0D38A007AA668 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		CBA165B325B0D50F007AA668 /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
+		CBA165B625B0D517007AA668 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CBA165B925B0D51D007AA668 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CBA165BC25B0D524007AA668 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +108,13 @@
 		CBA1656425B0CB66007AA668 /* JatAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				CBA165A425B0D1D6007AA668 /* Core */,
 				CBA1658F25B0CFAF007AA668 /* Scenes */,
 				CBA1658925B0CF28007AA668 /* Extensions */,
 				CBA1657E25B0CE54007AA668 /* Helpers */,
 				CBA1656525B0CB66007AA668 /* AppDelegate.swift */,
 				CBA1656725B0CB66007AA668 /* SceneDelegate.swift */,
 				CBA1656925B0CB66007AA668 /* ViewController.swift */,
-				CBA1656B25B0CB66007AA668 /* Main.storyboard */,
 				CBA1656E25B0CB67007AA668 /* Assets.xcassets */,
 				CBA1657025B0CB67007AA668 /* LaunchScreen.storyboard */,
 				CBA1657325B0CB67007AA668 /* Info.plist */,
@@ -165,6 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				CBA1659425B0CFCF007AA668 /* View */,
+				CBA1659825B0D10E007AA668 /* LoginConfigurator.swift */,
+				CBA1659B25B0D116007AA668 /* LoginViewController.swift */,
+				CBA1659E25B0D11C007AA668 /* LoginPresenter.swift */,
+				CBA165A125B0D121007AA668 /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -172,6 +196,11 @@
 		CBA1659225B0CFC0007AA668 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				CBA165AF25B0D37D007AA668 /* View */,
+				CBA165B325B0D50F007AA668 /* SignUpConfigurator.swift */,
+				CBA165B625B0D517007AA668 /* SignUpViewController.swift */,
+				CBA165B925B0D51D007AA668 /* SignUpPresenter.swift */,
+				CBA165BC25B0D524007AA668 /* SignUpRouter.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -187,6 +216,31 @@
 			isa = PBXGroup;
 			children = (
 				CBA1659525B0CFD9007AA668 /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA165A425B0D1D6007AA668 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CBA165A525B0D1E9007AA668 /* CommonPart */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CBA165A525B0D1E9007AA668 /* CommonPart */ = {
+			isa = PBXGroup;
+			children = (
+				CBA165A625B0D1F5007AA668 /* LifecyclePresenterProtocol.swift */,
+				CBA165AA25B0D298007AA668 /* CommonRouterProtocol.swift */,
+			);
+			path = CommonPart;
+			sourceTree = "<group>";
+		};
+		CBA165AF25B0D37D007AA668 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBA165B025B0D38A007AA668 /* SignUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,7 +307,7 @@
 				CBA1659625B0CFD9007AA668 /* Login.storyboard in Resources */,
 				CBA1657225B0CB67007AA668 /* LaunchScreen.storyboard in Resources */,
 				CBA1656F25B0CB67007AA668 /* Assets.xcassets in Resources */,
-				CBA1656D25B0CB66007AA668 /* Main.storyboard in Resources */,
+				CBA165B125B0D38A007AA668 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,26 +360,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBA1659925B0D10E007AA668 /* LoginConfigurator.swift in Sources */,
 				CBA1658125B0CE62007AA668 /* AppStoryboard.swift in Sources */,
 				CBA1656A25B0CB66007AA668 /* ViewController.swift in Sources */,
+				CBA165BA25B0D51D007AA668 /* SignUpPresenter.swift in Sources */,
+				CBA165BD25B0D524007AA668 /* SignUpRouter.swift in Sources */,
+				CBA165AB25B0D298007AA668 /* CommonRouterProtocol.swift in Sources */,
+				CBA1659F25B0D11C007AA668 /* LoginPresenter.swift in Sources */,
+				CBA165B425B0D50F007AA668 /* SignUpConfigurator.swift in Sources */,
 				CBA1656625B0CB66007AA668 /* AppDelegate.swift in Sources */,
+				CBA1659C25B0D116007AA668 /* LoginViewController.swift in Sources */,
+				CBA165B725B0D517007AA668 /* SignUpViewController.swift in Sources */,
 				CBA1656825B0CB66007AA668 /* SceneDelegate.swift in Sources */,
 				CBA1658C25B0CF42007AA668 /* UITableView+ReusableSupport.swift in Sources */,
+				CBA165A225B0D121007AA668 /* LoginRouter.swift in Sources */,
 				CBA1658625B0CEEF007AA668 /* ReuseIdentifying.swift in Sources */,
+				CBA165A725B0D1F5007AA668 /* LifecyclePresenterProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBA1656B25B0CB66007AA668 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBA1656C25B0CB66007AA668 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CBA1657025B0CB67007AA668 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
