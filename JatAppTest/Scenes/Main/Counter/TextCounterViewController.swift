@@ -18,7 +18,7 @@ final class TextCounterViewController: UIViewController, TextCounterView {
     var presenter: TextCounterPresenterProtocol!
     var configurator: TextCounterConfiguratorProtocol!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
         
     override func viewDidLoad() {
         super.viewDidLoad()

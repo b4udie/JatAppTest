@@ -15,7 +15,7 @@ protocol LoginView: class {
 final class LoginViewController: UIViewController, LoginView {
     
     var presenter: LoginPresenterProtocol!
-    var configurator: LoginConfiguratorProtocol = LoginConfigurator()
+    var configurator: LoginConfiguratorProtocol!
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!

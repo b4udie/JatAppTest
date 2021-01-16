@@ -8,7 +8,6 @@
 import Alamofire
 
 enum ErrorType: Error {
-    case authorizationError
     case validationError([ValidationError])
     case generalError([GeneralError])
     case unknownError
@@ -17,8 +16,6 @@ enum ErrorType: Error {
         self = .unknownError
         
         switch code {
-        case 401:
-            self = .authorizationError
         case 422:
             if let error = try? JSONDecoder().decode(ValidationErrorModel.self, from: data ?? Data()) {
                 self = .validationError(error.errors)

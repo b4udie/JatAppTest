@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="Dn1-ob-Eco">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="yMd-O7-tsq" customClass="LoginViewController" customModule="JatAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" modalPresentationStyle="fullScreen" id="yMd-O7-tsq" customClass="LoginViewController" customModule="JatAppTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N2d-lo-iF4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

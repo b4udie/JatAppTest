@@ -74,7 +74,7 @@ final class TextCounterPresenter: TextCounterPresenterProtocol {
         authManager.logout { [unowned self] result in
             switch result {
             case .success:
-                self.router.dismiss(animated: true)
+                self.router.logoutButtonResolve()
             case .failure(let error):
                 self.router.present(viewController: AlertFactory.alert(with: error))
             }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TextCounterCell: UITableViewCell {
+final class TextCounterCell: UITableViewCell {
 
     @IBOutlet private weak var detailLabel: UILabel!
 

@@ -12,7 +12,7 @@ protocol LoginRouterProtocol: CommonRouter {
     func showSignUpScreen()
 }
 
-class LoginRouter: CommonRouterImplementation, LoginRouterProtocol {
+final class LoginRouter: CommonRouterImplementation, LoginRouterProtocol {
     func showTextCounterScreen() {
         let textCounterModule = TextCounterViewController.instantiateFrom(appStoryboard: .counter)
         

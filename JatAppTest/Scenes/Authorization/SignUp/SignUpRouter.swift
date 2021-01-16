@@ -11,7 +11,7 @@ protocol SignUpRouterProtocol: CommonRouter {
     func showTextCounterScreen()
 }
 
-class SignUpRouter: CommonRouterImplementation, SignUpRouterProtocol {
+final class SignUpRouter: CommonRouterImplementation, SignUpRouterProtocol {
     func showTextCounterScreen() {
         let textCounterModule = TextCounterViewController.instantiateFrom(appStoryboard: .counter)
         

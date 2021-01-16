@@ -22,7 +22,6 @@
 		CB2AF91825B1FBD500752411 /* SandboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2AF91725B1FBD500752411 /* SandboxManager.swift */; };
 		CB2AF91F25B1FEA500752411 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2AF91E25B1FEA500752411 /* TextModel.swift */; };
 		CBA1656625B0CB66007AA668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1656525B0CB66007AA668 /* AppDelegate.swift */; };
-		CBA1656825B0CB66007AA668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1656725B0CB66007AA668 /* SceneDelegate.swift */; };
 		CBA1656F25B0CB67007AA668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA1656E25B0CB67007AA668 /* Assets.xcassets */; };
 		CBA1657225B0CB67007AA668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBA1657025B0CB67007AA668 /* LaunchScreen.storyboard */; };
 		CBA1658125B0CE62007AA668 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA1658025B0CE62007AA668 /* AppStoryboard.swift */; };
@@ -69,7 +68,6 @@
 		CB2AF91E25B1FEA500752411 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
 		CBA1656225B0CB66007AA668 /* JatAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JatAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBA1656525B0CB66007AA668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBA1656725B0CB66007AA668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBA1656E25B0CB67007AA668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBA1657125B0CB67007AA668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBA1657325B0CB67007AA668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				CBA1658925B0CF28007AA668 /* Extensions */,
 				CBA1657E25B0CE54007AA668 /* Helpers */,
 				CBA1656525B0CB66007AA668 /* AppDelegate.swift */,
-				CBA1656725B0CB66007AA668 /* SceneDelegate.swift */,
 				CBA1656E25B0CB67007AA668 /* Assets.xcassets */,
 				CBA1657025B0CB67007AA668 /* LaunchScreen.storyboard */,
 				CBA1657325B0CB67007AA668 /* Info.plist */,
@@ -585,7 +582,6 @@
 				CBA1659C25B0D116007AA668 /* LoginViewController.swift in Sources */,
 				CB1E2FC025B21CDB0004A96B /* TextCounterViewController.swift in Sources */,
 				CBA165B725B0D517007AA668 /* SignUpViewController.swift in Sources */,
-				CBA1656825B0CB66007AA668 /* SceneDelegate.swift in Sources */,
 				CBA165E625B0DDB3007AA668 /* AuthRouter.swift in Sources */,
 				CBA165EA25B0DDC4007AA668 /* AuthorizationManager.swift in Sources */,
 				CB1E2FBD25B21CC90004A96B /* TextCounterConfigurator.swift in Sources */,
