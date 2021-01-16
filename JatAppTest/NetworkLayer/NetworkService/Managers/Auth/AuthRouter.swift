@@ -8,11 +8,11 @@
 import Alamofire
 
 enum AuthRouter: CaseIterable, APIConfiguration {
+    // MARK: - all cases that not needed access token
     static var allCases: [AuthRouter] {
         return [
             .signUp(name: .emptyLine, email: .emptyLine, password: .emptyLine),
-            .login(email: .emptyLine, password: .emptyLine),
-            .logout
+            .login(email: .emptyLine, password: .emptyLine)
         ]
     }
 
@@ -57,7 +57,7 @@ enum AuthRouter: CaseIterable, APIConfiguration {
     }
     
     static func isAuthRequest(request: URLRequest) -> Bool {
-        let authSign = Self.allCases.map({ $0.path })
+        let authSign = Self.allCases.map { $0.path }
             
         if let urlString = request.url?.absoluteString {
             return authSign.first(where: { urlString.contains($0) }) != nil

@@ -10,11 +10,10 @@ import Alamofire
 enum SandboxRouter: APIConfiguration {
 
     case getText
-    case getPerson
         
     var method: HTTPMethod {
         switch self {
-        case .getText, .getPerson:
+        case .getText:
             return .get
         }
     }
@@ -23,14 +22,12 @@ enum SandboxRouter: APIConfiguration {
         switch self {
         case .getText:
             return "get/text/"
-        case .getPerson:
-            return "get/person/"
         }
     }
     
     var parameters: RequestParams {
         switch self {
-        case .getText, .getPerson:
+        case .getText:
             return .url([:])
         }
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wt-tk-KmO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
@@ -8,32 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="YBA-od-HZt">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="8wt-tk-KmO" customClass="LoginViewController" customModule="JatAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="8wt-tk-KmO" customClass="SignUpViewController" customModule="JatAppTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gvm-5K-uui">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKL-Xv-QwP">
-                                <rect key="frame" x="20" y="436" width="374" height="34"/>
+                                <rect key="frame" x="20" y="286" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVu-DO-cCD">
-                                <rect key="frame" x="20" y="536" width="374" height="34"/>
+                                <rect key="frame" x="20" y="386" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPM-fe-czh">
-                                <rect key="frame" x="20" y="610" width="374" height="30"/>
+                                <rect key="frame" x="20" y="460" width="374" height="30"/>
                                 <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="8wt-tk-KmO" eventType="touchUpInside" id="Kvb-JW-ogn"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW9-z0-ofP">
-                                <rect key="frame" x="20" y="486" width="374" height="34"/>
+                                <rect key="frame" x="20" y="336" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="A05-Z5-gc1"/>
@@ -45,7 +48,7 @@
                             <constraint firstItem="A05-Z5-gc1" firstAttribute="trailing" secondItem="rVu-DO-cCD" secondAttribute="trailing" constant="20" id="Q2J-AV-7HU"/>
                             <constraint firstItem="YW9-z0-ofP" firstAttribute="trailing" secondItem="rKL-Xv-QwP" secondAttribute="trailing" id="Vr6-Ql-Te5"/>
                             <constraint firstItem="rVu-DO-cCD" firstAttribute="top" secondItem="YW9-z0-ofP" secondAttribute="bottom" constant="16" id="bBr-Et-pdS"/>
-                            <constraint firstItem="rKL-Xv-QwP" firstAttribute="centerY" secondItem="A05-Z5-gc1" secondAttribute="centerY" id="eWV-9V-qJm"/>
+                            <constraint firstItem="rKL-Xv-QwP" firstAttribute="centerY" secondItem="A05-Z5-gc1" secondAttribute="centerY" constant="-150" id="eWV-9V-qJm"/>
                             <constraint firstItem="rKL-Xv-QwP" firstAttribute="leading" secondItem="A05-Z5-gc1" secondAttribute="leading" constant="20" id="fCY-yg-X13"/>
                             <constraint firstItem="IPM-fe-czh" firstAttribute="top" secondItem="rVu-DO-cCD" secondAttribute="bottom" constant="40" id="hdi-1y-3v5"/>
                             <constraint firstItem="IPM-fe-czh" firstAttribute="leading" secondItem="A05-Z5-gc1" secondAttribute="leading" constant="20" id="mfY-z8-FJS"/>
@@ -54,6 +57,12 @@
                             <constraint firstItem="YW9-z0-ofP" firstAttribute="leading" secondItem="rKL-Xv-QwP" secondAttribute="leading" id="xPS-0L-qcX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="YW9-z0-ofP" id="Dif-aD-e8u"/>
+                        <outlet property="nameTextField" destination="rKL-Xv-QwP" id="mMB-Bb-g2c"/>
+                        <outlet property="passwordTextField" destination="rVu-DO-cCD" id="7ed-L7-UcU"/>
+                        <outlet property="signUpButton" destination="IPM-fe-czh" id="8rZ-Qt-cLS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOT-TH-Jhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

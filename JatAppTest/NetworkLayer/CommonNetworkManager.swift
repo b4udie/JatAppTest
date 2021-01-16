@@ -9,6 +9,12 @@ import Alamofire
 
 class CommonNetworkManager: SessionDelegate {
     
+    let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
     let session = Session(interceptor: RequestInterceptor.shared)
 
 }

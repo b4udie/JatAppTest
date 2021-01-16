@@ -9,4 +9,6 @@ import Foundation
 
 extension String {
     static let emptyLine = ""
+    static let space = " "
+    static let newLine = "\n"
 }

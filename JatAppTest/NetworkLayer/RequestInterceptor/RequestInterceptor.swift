@@ -28,7 +28,41 @@ final class RequestInterceptor: SessionDelegate, Alamofire.RequestInterceptor {
     }
     
     func retry(_ request: Request, for session: Session, dueTo error: Error, completion: @escaping (RetryResult) -> Void) {
-        // TODO: - Handle unauthorized error (401)
+        guard request.response?.statusCode == 401 else {
+            return completion(.doNotRetry)
+        }
+        
+        guard let url = request.request?.url?.absoluteString else {
+            return completion(.doNotRetry)
+        }
+                
+        guard let retryCount = retriedRequests[url] else {
+            retriedRequests[url] = 1
+            completion(.retryWithDelay(1))
+            return
+        }
+        
+        if retryCount <= 2 {
+            retriedRequests[url] = retryCount + 1
+            completion(.retryWithDelay(1))
+        } else {
+            removeCachedUrlRequest(url: url)
+            
+            // MARK: Refresh access token here if u have a refreshToken and retry the request
+            // If we haven't the refreshToken, just make a logout
+
+            NotificationCenter.default.post(name: Notification.Name(Notification.logout), object: nil)
+            
+            completion(.doNotRetry)
+        }
+    }
+    
+    private func removeCachedUrlRequest(url: String?) {
+        guard let url = url else {
+            return
+        }
+        
+        retriedRequests.removeValue(forKey: url)
     }
 }
 

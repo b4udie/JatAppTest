@@ -21,6 +21,8 @@ extension APIConfiguration {
         urlRequest.httpMethod = method.rawValue
         urlRequest.setValue(ContentType.json.rawValue,
                             forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        urlRequest.setValue(ContentType.locale.rawValue,
+                            forHTTPHeaderField: HTTPHeaderField.acceptLanuage.rawValue)
         
         switch parameters {
             
@@ -56,9 +58,11 @@ enum RequestParams {
 
 enum ContentType: String {
     case json = "application/json"
+    case locale = "uk_UA"
 }
 
 enum HTTPHeaderField: String {
     case authentication = "Authorization"
     case contentType = "Content-Type"
+    case acceptLanuage = "Accept-Language"
 }

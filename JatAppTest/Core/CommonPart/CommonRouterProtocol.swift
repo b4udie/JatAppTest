@@ -13,8 +13,6 @@ protocol CommonRouter: class {
     func present(viewController: UIViewController, animated: Bool)
     func push(_ viewController: UIViewController, animated: Bool)
     
-    func presentAlert(with message: String)
-        
     func dismiss(animated: Bool)
     func popToRoot(animated: Bool)
     func popViewController(animated: Bool)
@@ -23,6 +21,10 @@ protocol CommonRouter: class {
 extension CommonRouter {
     func push(_ viewController: UIViewController) {
         push(viewController, animated: true)
+    }
+    
+    func present(viewController: UIViewController) {
+        present(viewController: viewController, animated: true)
     }
 }
 
@@ -47,10 +49,6 @@ class CommonRouterImplementation: CommonRouter {
         DispatchQueue.main.async {
             self.viewController?.present(viewController, animated: animated)
         }
-    }
-    
-    func presentAlert(with message: String) {
-        fatalError("implement")
     }
     
     func dismiss(animated: Bool) {

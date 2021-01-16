@@ -16,9 +16,12 @@ final class LoginConfigurator: LoginConfiguratorProtocol {
     func configure(viewController: LoginViewController) {
         let router = LoginRouter(viewController: viewController)
         
+        let authManager = AuthManager()
+        
         let presenter = LoginPresenter(
             view: viewController,
-            router: router
+            router: router,
+            authManager: authManager
         )
         
         viewController.presenter = presenter

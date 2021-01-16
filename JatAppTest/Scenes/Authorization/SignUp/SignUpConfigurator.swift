@@ -16,9 +16,12 @@ final class SignUpConfigurator: SignUpConfiguratorProtocol {
     func configure(viewController: SignUpViewController) {
         let router = SignUpRouter(viewController: viewController)
         
+        let authManager = AuthManager()
+        
         let presenter = SignUpPresenter(
             view: viewController,
-            router: router
+            router: router,
+            authManager: authManager
         )
         
         viewController.presenter = presenter
